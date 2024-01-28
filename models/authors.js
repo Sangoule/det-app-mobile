@@ -16,17 +16,15 @@ class Author {
 // Créez des instances d'auteurs avec des données spécifiques
 const sbs = new Author(
   'Cheikh Seydil Hadj Malick Sy',
-  './assets/images/sbs.jpeg',
-  [
-    
-  ]
+  require('../assets/images/sbs.jpeg'),
+  []
 );
 
-const sms = new Author('Serigne Babacar Sy', './assets/images/sms.jpeg', []);
-const smssd = new Author('Serigne Cheikh Ahmed Tidiane Sy', './assets/images/smssd.jpeg', []);
-const scts = new Author('Serigne Abdou Aziz Sy Dabakh', './assets/images/scts.jpeg', []);
-const ehms = new Author('Serigne Maodo Sy Dabakh', './assets/images/ehms.jpeg', []);
-const mms = new Author('Serigne Mbaye Sy Abdou', './assets/images/mms.jpeg', []);
+const sms = new Author('Serigne Babacar Sy', require('../assets/images/sbs.jpeg'), []);
+const smssd = new Author('Serigne Cheikh Ahmed Tidiane Sy',require('../assets/images/smsa.jpg'), []);
+const scts = new Author('Serigne Abdou Aziz Sy Dabakh', require('../assets/images/maadms.jpg'), []);
+const ehms = new Author('Serigne Maodo Sy Dabakh', require('../assets/images/smsm.jpg'), []);
+const mms = new Author('Serigne Mbaye Sy Abdou', require('../assets/images/sbs.jpeg'), []);
 
 // Créez une liste d'auteurs
 const authors = [sbs, sms, smssd, scts, ehms, mms];
